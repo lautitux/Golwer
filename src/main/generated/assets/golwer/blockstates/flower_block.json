@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "golwer:block/flower_block"
+    }
+  }
+}

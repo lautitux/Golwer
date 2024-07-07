@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "tag": "minecraft:dirt"
+    },
+    "f": {
+      "tag": "minecraft:flowers"
+    }
+  },
+  "pattern": [
+    "fff",
+    "fdf",
+    "fff"
+  ],
+  "result": {
+    "item": "golwer:flower_block"
+  },
+  "show_notification": true
+}

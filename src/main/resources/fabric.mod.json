@@ -1,0 +1,54 @@
+{
+	"schemaVersion": 1,
+	"id": "golwer",
+	"version": "${version}",
+	"name": "Golwer",
+	"description": "A small mod introducing the Flower Golem \uD83C\uDF3B, a creature that peacefully roams the world. Just like other golems, it can be summoned by players. Its unique ability? When near crops, it lovingly pollinates them, adding a touch of magic to your farming",
+	"authors": [
+		"Lautiux"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC-BY-NC-4.0",
+	"icon": "assets/golwer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.lautiux.golwer.Golwer",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.lautiux.golwer.GolwerClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.lautiux.golwer.GolwerDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"golwer.mixins.json",
+		{
+			"config": "golwer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

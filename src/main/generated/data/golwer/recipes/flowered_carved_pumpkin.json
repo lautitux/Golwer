@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:flowers"
+    },
+    {
+      "item": "minecraft:carved_pumpkin"
+    }
+  ],
+  "result": {
+    "item": "golwer:flowered_carved_pumpkin"
+  }
+}
