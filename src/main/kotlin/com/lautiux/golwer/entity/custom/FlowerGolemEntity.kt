@@ -49,9 +49,9 @@ class FlowerGolemEntity(entityType: EntityType<out AnimalEntity>, world: World) 
             DataTracker.registerData(FlowerGolemEntity::class.java, TrackedDataHandlerRegistry.BOOLEAN)
     }
 
-    override fun initDataTracker() {
-        super.initDataTracker()
-        dataTracker.startTracking(POLLINATING_TRACKER, false)
+    override fun initDataTracker(builder: DataTracker.Builder) {
+        super.initDataTracker(builder)
+        builder.add(POLLINATING_TRACKER, false)
     }
 
 
@@ -228,7 +228,7 @@ class FlowerGolemEntity(entityType: EntityType<out AnimalEntity>, world: World) 
                                 }
                             }
                             if (updatedBlockState != null) {
-                                world.syncWorldEvent(WorldEvents.PLANT_FERTILIZED, blockPos, 0)
+                                world.syncWorldEvent(WorldEvents.BEE_FERTILIZES_PLANT, blockPos, 15)
                                 world.setBlockState(blockPos, updatedBlockState)
                                 pollinated = true
                                 cropsGrownSinceCharge += 1

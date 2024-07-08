@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:flowers"
+            "items": "#minecraft:flowers"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:dirt"
+            "items": "#minecraft:dirt"
           }
         ]
       },
@@ -39,6 +39,5 @@
     "recipes": [
       "golwer:flower_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

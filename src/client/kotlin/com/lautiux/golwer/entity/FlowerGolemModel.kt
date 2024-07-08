@@ -16,17 +16,8 @@ class FlowerGolemModel<T : FlowerGolemEntity?>(root: ModelPart) : SinglePartEnti
     private val FlowerGolem: ModelPart = root.getChild("Cuerpo")
     private val Head: ModelPart = root.getChild("Cuerpo").getChild("SubCuerpo").getChild("Cabeza")
 
-    override fun render(
-        matrices: MatrixStack,
-        vertexConsumer: VertexConsumer,
-        light: Int,
-        overlay: Int,
-        red: Float,
-        green: Float,
-        blue: Float,
-        alpha: Float
-    ) {
-        FlowerGolem.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha)
+    override fun render(matrices: MatrixStack?, vertices: VertexConsumer?, light: Int, overlay: Int, color: Int) {
+        FlowerGolem.render(matrices, vertices, light, overlay, color)
     }
 
     override fun setAngles(

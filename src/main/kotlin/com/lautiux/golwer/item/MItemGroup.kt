@@ -22,6 +22,6 @@ object MItemGroup {
                 entries.add(MBlocks.FLOWER_BLOCK)
                 entries.add(MBlocks.FLOWERED_CARVED_PUMPKIN_BLOCK)
             }.build()
-        Registry.register(Registries.ITEM_GROUP, Identifier(Golwer.MOD_ID, "golwer"), group)
+        Registry.register(Registries.ITEM_GROUP, Identifier.of(Golwer.MOD_ID, "golwer"), group)
     }
 }

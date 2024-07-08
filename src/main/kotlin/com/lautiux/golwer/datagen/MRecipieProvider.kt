@@ -12,10 +12,15 @@ import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
 import net.minecraft.recipe.Ingredient
 import net.minecraft.recipe.book.RecipeCategory
+import net.minecraft.registry.RegistryWrapper.WrapperLookup
 import net.minecraft.registry.tag.ItemTags
 import net.minecraft.registry.tag.TagKey
+import java.util.concurrent.CompletableFuture
 
-class MRecipieProvider(generator: FabricDataOutput) : FabricRecipeProvider(generator) {
+class MRecipieProvider(
+    generator: FabricDataOutput,
+    registryLookup: CompletableFuture<WrapperLookup>
+) : FabricRecipeProvider(generator, registryLookup) {
     override fun generate(exporter: RecipeExporter?) {
         // FLOWERED_CARVED_PUMPKIN_BLOCK recipe
         ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, MBlocks.FLOWERED_CARVED_PUMPKIN_BLOCK)

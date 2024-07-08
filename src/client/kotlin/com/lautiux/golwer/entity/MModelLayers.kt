@@ -6,6 +6,6 @@ import net.minecraft.util.Identifier
 
 class MModelLayers {
     companion object {
-        val FLOWER_GOLEM = EntityModelLayer(Identifier(Golwer.MOD_ID, "flower_golem"), "main")
+        val FLOWER_GOLEM = EntityModelLayer(Identifier.of(Golwer.MOD_ID, "flower_golem"), "main")
     }
 }

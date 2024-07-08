@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier
 
 object MEntities {
     val FLOWER_GOLEM: EntityType<FlowerGolemEntity> = Registry.register(Registries.ENTITY_TYPE,
-        Identifier(Golwer.MOD_ID, "flower_golem"),
+        Identifier.of(Golwer.MOD_ID, "flower_golem"),
         FabricEntityTypeBuilder
             .create(SpawnGroup.CREATURE) { entityType, world -> FlowerGolemEntity(entityType, world) }
             .dimensions(EntityDimensions.fixed(1.0f, 1.1f))

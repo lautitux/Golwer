@@ -15,7 +15,7 @@ class FlowerGolemRenderer(context: EntityRendererFactory.Context): MobEntityRend
         )
     ), 0.4f,)
 {
-    private val TEXTURE = Identifier(Golwer.MOD_ID, "textures/entity/flower_golem.png")
+    private val TEXTURE = Identifier.of(Golwer.MOD_ID, "textures/entity/flower_golem.png")
 
     override fun getTexture(entity: FlowerGolemEntity?): Identifier {
         return TEXTURE

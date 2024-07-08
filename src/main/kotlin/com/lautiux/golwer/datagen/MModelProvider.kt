@@ -4,11 +4,8 @@ import com.lautiux.golwer.block.MBlocks
 import com.lautiux.golwer.item.MItems
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings
-import net.minecraft.block.Block
 import net.minecraft.block.Blocks
 import net.minecraft.data.client.*
-import net.minecraft.item.BlockItem
 import net.minecraft.util.Identifier
 import java.util.*
 
@@ -27,7 +24,7 @@ class MModelProvider(generator: FabricDataOutput) : FabricModelProvider(generato
     override fun generateItemModels(itemModelGenerator: ItemModelGenerator) {
         itemModelGenerator.register(
             MItems.FLOWER_GOLEM_SPAWN_EGG,
-            Model(Optional.of(Identifier("item/template_spawn_egg")), Optional.empty())
+            Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty())
         )
     }
 }

@@ -15,7 +15,7 @@
     "fff"
   ],
   "result": {
-    "item": "golwer:flower_block"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "golwer:flower_block"
+  }
 }
