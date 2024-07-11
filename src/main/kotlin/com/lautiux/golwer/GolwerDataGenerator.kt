@@ -1,6 +1,7 @@
 package com.lautiux.golwer
 
 import com.lautiux.golwer.block.MBlocks
+import com.lautiux.golwer.datagen.MAdvancements
 import com.lautiux.golwer.datagen.MLootTableProvider
 import com.lautiux.golwer.datagen.MModelProvider
 import com.lautiux.golwer.datagen.MRecipieProvider
@@ -14,6 +15,7 @@ object GolwerDataGenerator : DataGeneratorEntrypoint {
         val pack = fabricDataGenerator.createPack()
         pack.addProvider { dataOutput, registryLookup -> MLootTableProvider(dataOutput, registryLookup) }
         pack.addProvider { dataOutput, registryLookup -> MRecipieProvider(dataOutput, registryLookup) }
+        pack.addProvider { dataOutput, registryLookup -> MAdvancements(dataOutput, registryLookup) }
         pack.addProvider { dataOutput, _ -> MModelProvider(dataOutput) }
     }
 }

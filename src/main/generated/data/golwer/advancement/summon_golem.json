@@ -1,0 +1,38 @@
+{
+  "parent": "golwer:advancement_tab_icon",
+  "criteria": {
+    "summoned_flower_golem": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "golwer:flower_golem"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:summoned_entity"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.spawn_flower_golem.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "golwer:flowered_carved_pumpkin"
+    },
+    "title": {
+      "translate": "advancement.spawn_flower_golem.title"
+    }
+  },
+  "requirements": [
+    [
+      "summoned_flower_golem"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

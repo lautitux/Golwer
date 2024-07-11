@@ -2,5 +2,10 @@
   "block.golwer.flower_block": "Flower Block",
   "block.golwer.flowered_carved_pumpkin": "Flowered Carved Pumpkin",
   "item.golwer.flower_golem_spawn_egg": "Flower Golem Spawn Egg",
-  "entity.golwer.flower_golem": "Flower Golem"
+  "entity.golwer.flower_golem": "Flower Golem",
+  "advancement.spawn_flower_golem.title": "Small Budy",
+  "advancement.spawn_flower_golem.description": "Build a Flower Golem to help with your farming and bring joy to your world",
+  "advancement.golwer.thanks": "Thanks for installing Golwer :)",
+  "advancement.flower_golem_pollinated.title": "Is that magic?",
+  "advancement.flower_golem_pollinated.description": "Watch a Flower Golem pollinate a crop"
 }

@@ -26,11 +26,14 @@ import net.minecraft.item.ItemStack
 import net.minecraft.recipe.Ingredient
 import net.minecraft.registry.tag.BlockTags
 import net.minecraft.registry.tag.ItemTags
+import net.minecraft.server.network.ServerPlayerEntity
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
 import net.minecraft.util.math.BlockPos
+import net.minecraft.util.math.Box
 import net.minecraft.util.math.Vec3i
+import net.minecraft.world.StructureSpawns.BoundingBox
 import net.minecraft.world.World
 import net.minecraft.world.WorldEvents
 import kotlin.math.min
@@ -237,6 +240,9 @@ class FlowerGolemEntity(entityType: EntityType<out AnimalEntity>, world: World) 
                     }
                 }
                 if (pollinated) {
+                    for (player in world.getNonSpectatingEntities(ServerPlayerEntity::class.java, boundingBox.expand(5.0))) {
+//                        MCriteria.FLOWER_GOLEM_POLINATED.trigger(player)
+                    }
                     pollinating = true
                 }
                 // Golwer.logger.info("Polinizando $pollinating, $idleAnimationTimeout")

@@ -2,5 +2,8 @@
   "block.golwer.flower_block": "Bloque de flores",
   "block.golwer.flowered_carved_pumpkin": "Calabaza tallada floreada",
   "item.golwer.flower_golem_spawn_egg": "Generar golem de flores",
-  "entity.golwer.flower_golem": "Golem de Flores"
+  "entity.golwer.flower_golem": "Golem de Flores",
+  "advancement.spawn_flower_golem.title": "Pequeño Amigo",
+  "advancement.spawn_flower_golem.description": "Construye un Golem de Flores para ayudar con las cosechas y traer alegría al mundo",
+  "advancement.golwer.thanks": "Gracias por instalar Golwer :)"
 }
