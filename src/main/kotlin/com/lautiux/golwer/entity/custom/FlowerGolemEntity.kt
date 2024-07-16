@@ -240,9 +240,9 @@ class FlowerGolemEntity(entityType: EntityType<out AnimalEntity>, world: World) 
                     }
                 }
                 if (pollinated) {
-                    for (player in world.getNonSpectatingEntities(ServerPlayerEntity::class.java, boundingBox.expand(5.0))) {
-//                        MCriteria.FLOWER_GOLEM_POLINATED.trigger(player)
-                    }
+//                    for (player in world.getNonSpectatingEntities(ServerPlayerEntity::class.java, boundingBox.expand(5.0))) {
+////                        MCriteria.FLOWER_GOLEM_POLINATED.trigger(player)
+//                    }
                     pollinating = true
                 }
                 // Golwer.logger.info("Polinizando $pollinating, $idleAnimationTimeout")
